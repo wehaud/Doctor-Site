@@ -1,0 +1,24 @@
+.products-for-you {
+  .content {
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+  .product {
+    margin-bottom: 100px;
+  }
+}
+.reverse {
+  .product__content {
+    margin-left: 0;
+  }
+}
+.benefits {
+  .product {
+    .with-arrow {
+      padding-top: 0;
+    }
+    &__content {
+      align-items: flex-start;
+    }
+  }
+}

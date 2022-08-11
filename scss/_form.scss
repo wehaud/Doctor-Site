@@ -1,0 +1,27 @@
+.form {
+  &__field {
+    margin-bottom: 30px;
+    background-color: $light-gray;
+    padding: 15px 30px;
+    border-radius: 16px;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &__bound {
+    display: flex;
+    justify-content: space-between;
+    .content {
+      padding-right: 30px;
+      max-width: 42%;
+      &__fields {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 35px;
+        }
+      }
+    }
+  &__img {
+    border-radius: 16px;
+  }
+}

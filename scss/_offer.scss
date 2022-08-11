@@ -1,0 +1,27 @@
+.offer {
+  background-image: url(../img/back__main.jpg);
+  background-size: contain;
+  margin-bottom: 0;
+  .h1 {
+    color: $dark-gray-90;
+  }
+  .content {
+    padding-top: 10%;
+    margin-bottom: 220px;
+    max-width: 60%;
+    &__description {
+      font-size: 24px;
+    }
+  }
+  .cards {
+    column-gap: 20px;
+    .card {
+      &__header {
+        align-items: center;
+      }
+      &__icon {
+        object-fit: contain;
+      }
+    }
+  }
+}

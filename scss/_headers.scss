@@ -1,0 +1,159 @@
+//variables
+$h1: 72px;
+$h2: 48px;
+$h3: 36px;
+$h4: 24px;
+$h5: 18px;
+$h6: 16px;
+
+$lh-100: 100%;
+$lh-110: 110%;
+$lh-140: 140%;
+$lh-160: 160%;
+
+$ls-0: 0%;
+$ls-2: 2%;
+$ls--2:-2%;
+$ls--3:-3%;
+
+$fw-light: 300;
+$fw-reg: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+
+@mixin h2 {
+  font-size: $h2;
+  letter-spacing: $ls--2;
+}
+@mixin h3 {
+    font-size: $h3;
+    letter-spacing: $ls-2;
+    font-weight: $fw-semibold;
+}
+@mixin h4--uppercase {
+    font-size: $h4;
+    text-transform: uppercase;
+    line-height: $lh-100;
+    letter-spacing: $ls-0;
+    font-weight: $fw-semibold;
+}
+@mixin h4--semibold {
+    font-size: $h4;
+    font-weight: $fw-semibold;
+    line-height: $lh-110;
+    letter-spacing: $ls-2;
+}
+@mixin h5--light {
+    font-size: $h5;
+    line-height: $lh-160;
+    letter-spacing: $ls-0;
+    font-weight: $fw-light;
+}
+
+//font weights
+[class*="--light"] {
+    font-weight: $fw-light;
+}
+[class*="--reg"] {
+    font-weight: $fw-reg;
+}
+[class*="--medium"] {
+    font-weight: $fw-medium;
+}
+[class*="--semibold"] {
+    font-weight: $fw-semibold;
+}
+
+//base headers without changes 
+h1 {
+    font-size: $h1;
+    letter-spacing: $ls--3;
+}
+h2 {
+    font-size: $h2;
+    letter-spacing: $ls--2;
+}
+h3 {
+    font-size: $h3;
+    letter-spacing: $ls-2;
+    font-weight: $fw-semibold;
+}
+
+//headers with common styles
+h1, h2 {
+    font-weight: $fw-medium;
+}
+h1, h2, h3 {
+    line-height: $lh-110;
+}
+
+
+//headers with types
+h4 {
+    font-size: $h4;
+    &--uppercase {
+        text-transform: uppercase;
+        line-height: $lh-100;
+        letter-spacing: $ls-0;
+        font-weight: $fw-semibold;
+    }
+    &--semibold, &--reg {
+        line-height: $lh-110;
+        letter-spacing: $ls-2;
+    }
+    &--reg {
+        font-style: italic;
+    }
+    &--light {
+        line-height: $lh-160;
+        letter-spacing: $ls--2;
+    }
+}
+h5 {
+    font-size: $h5;
+    &--semibold {
+        line-height: $lh-100;
+        letter-spacing: $ls-2;
+    }
+    &--light {
+        line-height: $lh-160;
+        letter-spacing: $ls-0;
+    }
+}
+h6 {
+    font-size: $h6;
+    &--medium {
+        line-height: $lh-100;
+    }
+    &--light {
+        line-height: $lh-140;
+    }
+}
+
+@media (max-width: 1024px) {
+  $h1: 60px;
+  $h2: 40px;
+  $h3: 30px;
+  $h4: 20px;
+  $h5: 16px;
+  $h6: 14px;
+
+  h1 {
+    font-size: $h1;
+  }
+  h2 {
+    font-size: $h2;
+  }
+  h3 {
+    font-size: $h3;
+  }
+  h4 {
+    font-size: $h4;
+  }
+  h5 {
+    font-size: $h5;
+  }
+  h6, p {
+    font-size: $h6;
+  }
+}

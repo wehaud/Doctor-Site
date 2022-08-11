@@ -1,0 +1,17 @@
+.actions {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+  .product {
+    align-items: flex-start;
+    justify-content: start;
+    &__content {
+      margin-left: 20px;
+    }
+    &__header {
+      margin-bottom: 4px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.place-for-text {
+  .content {
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__description {
+      max-width: 49%;
+      margin-top: 0;
+      padding-top: 0;
+    }
+  }
+}

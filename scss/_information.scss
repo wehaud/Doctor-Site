@@ -1,0 +1,23 @@
+.information {
+  .content {
+    max-width: 100%;
+  }
+  &__map {
+    border-radius: 16px;
+    object-fit: cover;
+    max-width: 50% !important;
+    min-height: 430px;
+  }
+  &__details {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .with-icon {
+    align-items: start;
+  }
+  .with-icon + .with-icon {
+    margin-top: 40px;
+  }
+}

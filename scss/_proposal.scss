@@ -1,0 +1,29 @@
+.proposal__bound {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  row-gap: 80px;
+  .card {
+    max-width: fit-content;
+    border: none;
+    padding: 0 40px 0 0;
+    &__header {
+      margin-bottom: 20px;
+    }
+    &__header-block {
+      margin-left: 30px;
+    }
+    &__name {
+      margin-left: 0;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    &__included {
+      list-style: disc;
+      margin-left: 30px;
+    }
+  }
+}

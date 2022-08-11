@@ -1,0 +1,36 @@
+.products {
+  .content {
+    margin-top: 140px;
+  }
+
+  &__cards {
+    display: block;
+    margin-top: 80px;
+    overflow: hidden;
+  }
+  &__wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    .card:last-child, .swiper-slide:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+ 
+      .link {
+        text-transform: uppercase;
+        color: $dark-gray-30;
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+  }
+}
+.swiper-slide-active {
+  margin-left: 20px;
+}
+.slider {
+  overflow: hidden;
+}

@@ -1,0 +1,39 @@
+@import 'config';
+
+//using
+@import 'headers';
+@import 'colors';
+@import 'blocks';
+
+//sections
+@import 'header';
+@import 'offer';
+@import 'about';
+@import 'products';
+@import 'projects';
+@import 'form';
+@import 'information';
+@import 'products-for-you';
+@import 'cost';
+@import 'proposal';
+@import 'cases';
+@import 'case';
+@import 'about-company';
+@import 'actions';
+@import 'place-for-text';
+@import 'benefits';
+@import 'footer';
+
+@import 'media';
+
+//styles
+body {
+  font-family: "Roboto", "sans-serif";
+  color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.footer {
+  margin-top: auto;
+}

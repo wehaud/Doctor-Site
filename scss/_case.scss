@@ -1,0 +1,57 @@
+.case {
+  .active {
+    background-color: $blue;
+  }
+}
+.case, .results {
+  .product {
+    &__content {
+      max-width: 45%;
+    } 
+    &__description {
+      font-size: 24px;
+    }
+  }
+}
+.purposes {
+  .cards {
+    column-gap: 40px;
+  }
+  .card {
+    padding: 60px 70px;
+    &__name {
+      margin-left: 0;
+      margin-bottom: 30px;
+      color: $blue;
+    }
+  }
+}
+.purposes, .actions, .statistic {
+  .content {
+    &__header {
+      margin-bottom: 80px;
+      font-size: 36px;
+    }
+  }
+}
+.statistic {
+  &__header {
+    font-weight: 600;
+    font-size: 24px;
+    color: $blue;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+}
+.change-case {
+  &__bound {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button {
+    padding: 24px 36px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+  }
+}

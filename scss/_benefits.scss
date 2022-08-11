@@ -1,0 +1,31 @@
+.benefits {
+  &__header {
+    margin-bottom: 80px;
+  }
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+    &__content {
+      display: flex;
+      margin-left: 0;
+      max-width: 100%;
+      justify-content: space-between;
+    }
+    &__header h3{
+      white-space: nowrap;
+      color: $blue;
+    }
+    &__description {
+      max-width: 50%;
+    }
+    &__spacer {
+      margin-top: 40px;
+    }
+    .arrow {
+      margin-right: 45px;
+    }
+  }
+  .product + .product {
+    margin-top: 40px;
+  }
+}

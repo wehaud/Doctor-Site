@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  border-bottom: 2px solid $light-gray;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  &__bound {
+        justify-content: space-between;
+        align-items: center;
+
+        display: flex;
+
+        .menu {
+          ul {
+            display: flex;
+    
+            li {
+                white-space: nowrap;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+            }
+    
+            li + li {
+                margin-left: 2rem;
+            }
+
+            li:hover {
+              color: $light-blue;
+              transition: 0.3s ease;
+            }
+          }
+        }
+        .contacts {
+          display: flex;
+
+          .with-icon + .with-icon {
+            margin-left: 47.5px;
+          }
+        }
+  }
+}

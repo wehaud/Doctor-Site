@@ -1,0 +1,10 @@
+.about-company {
+  .content {
+    margin-bottom: 80px;
+  }
+  .product {
+    &__content {
+      max-width: 45%;
+    }
+  }
+}

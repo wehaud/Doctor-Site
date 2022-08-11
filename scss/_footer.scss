@@ -1,0 +1,50 @@
+.footer {
+  background-color: $blue;
+  color: $white;
+  a {
+    color: $white-80;
+  }
+  &__bound {
+    padding-top: 80px;
+    padding-bottom: 110px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      &__name {
+        color: #fff;
+      }
+      &__description {
+        color: $white-60;
+        font-weight: 300;
+        font-size: 21px;
+        letter-spacing: 0.2rem;
+      }
+    }
+    .menu {
+      margin: 0 15% 0 auto;
+      ul {
+        flex-direction: column;
+      }
+      .menu__item {
+        margin-left: 0;
+        a {
+          color: $white-80;
+        }
+      }
+      .menu__item + .menu__item {
+        margin-top: 20px;
+      }
+      
+    }
+    .contacts {
+      .with-icon {
+        &__logo {
+          fill: $white-80;
+        }
+      }
+      .with-icon + .with-icon {
+        margin-top: 20px;
+      }
+    }
+  }
+}
